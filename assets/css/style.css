@@ -1,0 +1,313 @@
+:root {
+  --light-blue: rgba(115, 157, 235, 0.895);
+  --light-orange: rgb(189, 89, 7);
+}
+
+/* -----------  HEADER  ----------- */
+/* -----------  HEADER  ----------- */
+header li {
+  padding: 5px;
+  font-size: 1.3em;
+}
+header li:hover a {
+  text-decoration: underline;
+  color: var(--light-orange);
+}
+header .logo h3 {
+  font-size: 1.5em;
+  font-weight: bolder;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: var(--light-orange);
+}
+header .row {
+  align-items: center;
+  background-color: var(--light-blue);
+}
+nav ul li {
+  padding: 9px 15px;
+  text-transform: capitalize;
+}
+
+/* -----------  HEADER END ----------- */
+/* -----------  HEADER END ----------- */
+
+/* -----------  FOOTER  ----------- */
+/* -----------  FOOTER  ----------- */
+footer {
+  background-color: var(--light-blue);
+}
+footer .f-line {
+  background-color: rgba(32, 31, 31, 0.856);
+  padding: 1px;
+  width: 100%;
+  margin: 10px 0;
+}
+.soc-net p {
+  padding: 0 35px;
+  color: var(--light-orange);
+}
+.footer-input {
+  padding: 30px 0;
+  width: 100%;
+}
+.footer-input h5 {
+  font-size: 1.1em;
+}
+
+.contact-email {
+  text-align: center;
+  border: none;
+  width: 50%;
+  border-bottom: 1px solid var(--light-orange);
+  margin: 10px auto;
+  background: transparent;
+  color: rgba(0, 0, 0, 0.487);
+  font-size: 15px;
+}
+.contact-email::placeholder {
+  color: rgba(0, 0, 0, 0.221);
+  font-size: 15px;
+}
+.subm-footer {
+  width: auto;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.154);
+  padding: 9px 30px;
+  border-radius: 90px;
+  font-size: 1.1em;
+  color: var(--light-orange);
+  font-family: "Times New Roman", Times, serif;
+}
+#contact-text h3 {
+  font-size: 1.5em;
+}
+#contact-text h2 {
+  font-size: 1.7em;
+}
+
+/* -----------  FOOTER END ----------- */
+/* -----------  FOOTER END ----------- */
+
+/* -----------  HOME  ----------- */
+/* -----------  HOME  ----------- */
+
+.slide-wrapper {
+  width: 100%;
+  height: 700px;
+  position: relative;
+  margin: 0 auto;
+}
+.slides {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.slides-item {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+#left-button,
+#right-button {
+  position: absolute;
+  top: 50%;
+  color: var(--light-orange);
+  transform: translateY(-50%);
+  font-size: 2.2em;
+}
+#left-button {
+  left: 5%;
+  transform: translateX(-50px);
+}
+#right-button {
+  right: 5%;
+  transform: translateX(50px);
+}
+.dots-block {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+}
+.dots-item {
+  display: inline-block;
+  width: 35px;
+  height: 5px;
+  cursor: pointer;
+  background-color: gray;
+  margin-right: 7px;
+  /* border-radius: 50%; */
+}
+.dots-item:last-child {
+  margin: 0;
+}
+.active {
+  background-color: var(--light-orange);
+}
+/* -----------  HOME END ----------- */
+/* -----------  HOME END ----------- */
+
+/* -----------  LOGIN/REGISTER  ----------- */
+/* -----------  LOGIN/REGISTER  ----------- */
+
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
+#register {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4070f4;
+  font-family: "Poppins", sans-serif;
+}
+#sec-register {
+  width: 500px;
+}
+.register-wrapper {
+  position: relative;
+  max-width: 430px;
+  width: 100%;
+  background: #fff;
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.register-wrapper h2 {
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+.register-wrapper h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 28px;
+  border-radius: 12px;
+  background: #4070f4;
+}
+.register-wrapper form {
+  margin-top: 30px;
+}
+.register-wrapper form .input-box {
+  height: 52px;
+  margin: 18px 0;
+}
+#register form .input-box input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 15px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  border: 1.5px solid #c7bebe;
+  border-bottom-width: 2.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+.input-box input:focus,
+.input-box input:valid {
+  border: 1.5px solid #4070f4;
+}
+#register form .policy {
+  display: flex;
+  align-items: center;
+}
+#register form .policy input {
+  width: auto;
+}
+#register form h3 {
+  color: #707070;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.input-box.button input {
+  color: #fff;
+  letter-spacing: 1px;
+  border: none;
+  background: #4070f4;
+  cursor: pointer;
+}
+.input-box.button input:hover {
+  background: #0e4bf1;
+}
+#register form .text h3 {
+  color: #333;
+  width: 100%;
+  text-align: center;
+}
+#register form .text h3 a {
+  color: #4070f4;
+  text-decoration: none;
+}
+#register form .text h3 a:hover {
+  text-decoration: underline;
+}
+
+#register {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4070f4;
+  font-family: "Poppins", sans-serif;
+}
+#sec-register {
+  width: 500px;
+}
+.register-wrapper {
+  position: relative;
+  max-width: 430px;
+  width: 100%;
+  background: #fff;
+  padding: 34px;
+  border-radius: 6px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.register-wrapper h2 {
+  position: relative;
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+}
+
+/* -----------  LOGIN/REGISTER END ----------- */
+/* -----------  LOGIN/REGISTER END ----------- */
+
+/* -----------  PRODUCTS  ----------- */
+/* -----------  PRODUCTS  ----------- */
+.row-products {
+  flex-wrap: wrap;
+}
+.row-products .col {
+  width: 31%;
+  border: 1px solid var(--light-blue);
+  text-align: center;
+  margin: 5px;
+}
+.row-products .col h5 {
+  font-size: 1.2em;
+}
+.prod-img {
+  width: 200px;
+  height: 200px;
+}
+.prod-btn {
+  border: 1px solid var(--light-blue);
+  padding: 9px 11px;
+  background-color: #c7bebe;
+  color: var(--light-blue);
+  margin: 5px 1px;
+}
+.sec-col {
+  width: 100px;
+  height: 100px;
+}
+.second-img {
+  justify-content: center;
+}
